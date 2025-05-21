@@ -1,0 +1,15 @@
+{
+  "Main": {
+    "hello": "Merhaba",
+    "stories": "Hikayeler",
+    "userSummary": "Hesap Özeti"
+  },
+  "2fa": {
+    "2faAuthTitle": "2FA Kimlik Doğrulama",
+    "2faAuthDescription": "İki Faktörlü Kimlik Doğrulama, tek dokunuşla oturum açmaya olanak tanır ve verilerinizi yetkisiz erişime karşı korur.",
+    "2faActivationText": "Cihazınızda Authenticator uygulamasını açın ve yeni bir hesap eklemek için + simgesine dokunun. QR kodunu tara yı seçin.",
+    "2faAuthActivationDangerText": "Güvenlik anahtarınızı güvenli bir yerde saklayın. Authenticator erişiminizi ve anahtarınızı kaybetmek hesabınızın kilitlenmesine neden olabilir.",
+    "2faVerificationCode": "Doğrulama Kodu",
+    "2faSecretKey": "Güvenlik Anahtarı"
+  }
+}
