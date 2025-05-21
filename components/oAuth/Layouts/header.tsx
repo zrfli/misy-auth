@@ -7,9 +7,9 @@ import AvatarCardSkeleton from "@/components/Skeleton/avatar";
 import { useEffect } from "react";
 //import { toast } from "sonner";
 
-interface AvatarData {
+/*interface AvatarData {
     avatar?: string;
-}
+}*/
 
 export default function OAuthHeader({ authToken }: { authToken: string }) {
     //const [data, setData] = useState<AvatarData | null>(null);
