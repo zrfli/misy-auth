@@ -2,7 +2,7 @@
 
 import { Logo } from "@/components/Logo";
 import AvatarCardSkeleton from "@/components/Skeleton/avatar";
-import { fetchAvatar } from "@/services/api";
+//import { fetchAvatar } from "@/services/api";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
@@ -16,9 +16,9 @@ export default function OAuthHeader({ authToken }: { authToken: string }) {
     
     useEffect(() => {
         if(authToken) {
-            fetchAvatar(authToken)
+            /*fetchAvatar(authToken)
                 .then((response) => { if(response.data) { setData({ avatar: response.data }) } })
-                .catch(() => { toast("Avatar yüklenemedi!", { description: "Bir hata oluştu, lütfen tekrar deneyin." }); });
+                .catch(() => { toast("Avatar yüklenemedi!", { description: "Bir hata oluştu, lütfen tekrar deneyin." }); });*/
         }
     }, [authToken]);
     
