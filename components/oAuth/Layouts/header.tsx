@@ -4,7 +4,7 @@ import { Logo } from "@/components/Logo";
 import AvatarCardSkeleton from "@/components/Skeleton/avatar";
 //import { fetchAvatar } from "@/services/api";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 //import { toast } from "sonner";
 
 interface AvatarData {
