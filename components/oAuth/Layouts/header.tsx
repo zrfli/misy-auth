@@ -3,7 +3,7 @@
 import { Logo } from "@/components/Logo";
 import AvatarCardSkeleton from "@/components/Skeleton/avatar";
 //import { fetchAvatar } from "@/services/api";
-import Image from "next/image";
+//import Image from "next/image";
 import { useEffect } from "react";
 //import { toast } from "sonner";
 
