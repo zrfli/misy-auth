@@ -27,7 +27,7 @@ export default function OAuthHeader({ authToken }: { authToken: string }) {
             <nav className="px-4 lg:px-6 py-2.5">
                 <div className="flex justify-between items-center">
                     <Logo LogoClass="h-auto w-40 dark:invert" />
-                    <AvatarCardSkeleton className="rounded-full w-10 h-10" />}
+                    <AvatarCardSkeleton className="rounded-full w-10 h-10" />
                 </div>
             </nav>
         </header>
