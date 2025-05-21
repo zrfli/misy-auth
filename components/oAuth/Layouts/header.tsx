@@ -5,14 +5,14 @@ import AvatarCardSkeleton from "@/components/Skeleton/avatar";
 //import { fetchAvatar } from "@/services/api";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { toast } from "sonner";
+//import { toast } from "sonner";
 
 interface AvatarData {
     avatar?: string;
 }
 
 export default function OAuthHeader({ authToken }: { authToken: string }) {
-    const [data, setData] = useState<AvatarData | null>(null);
+    //const [data, setData] = useState<AvatarData | null>(null);
     
     useEffect(() => {
         if(authToken) {
