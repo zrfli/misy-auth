@@ -173,7 +173,6 @@ export const { handlers, signIn, signOut, auth, unstable_update } = NextAuth({
         sameSite: "lax",
         path: "/",
         secure: true,
-        domain: ".misy.online",
       },
     },
     callbackUrl: {
