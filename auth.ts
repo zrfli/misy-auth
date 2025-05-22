@@ -165,6 +165,19 @@ export const { handlers, signIn, signOut, auth, unstable_update } = NextAuth({
       return session;
     },
   },
+   cookies: {
+    sessionToken: {
+      name: `__Secure-next-auth.session-token`,
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: true, // HTTPS zorunlu
+        domain: ".misy.online", // <-- Tüm subdomain'ler için geçerli
+      },
+    },
+  },
+  useSecureCookies: true,
   trustHost: true,
   secret: process.env.NEXTAUTH_SECRET,
   pages: { signIn: "/", error: "/error" },
