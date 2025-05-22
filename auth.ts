@@ -166,14 +166,34 @@ export const { handlers, signIn, signOut, auth, unstable_update } = NextAuth({
     },
   },
    cookies: {
+    csrfToken: {
+      name: `__Host-authjs.csrf-token`,
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: true,
+        domain: ".misy.online",
+      },
+    },
+    callbackUrl: {
+      name: `__Secure-authjs.callback-url`,
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: true,
+        domain: ".misy.online",
+      },
+    },
     sessionToken: {
       name: `__Secure-next-auth.session-token`,
       options: {
         httpOnly: true,
         sameSite: "lax",
         path: "/",
-        secure: true, // HTTPS zorunlu
-        domain: ".misy.online", // <-- Tüm subdomain'ler için geçerli
+        secure: true,
+        domain: ".misy.online",
       },
     },
   },
